@@ -1,5 +1,8 @@
 var myApp = angular.module('myApp', []);
 
 myApp.controller('SockController', function() {
-  console.log('NG');
+  var vm = this;
+  vm.getSocks = function() {
+    console.log('in getSocks');
+  };
 });
